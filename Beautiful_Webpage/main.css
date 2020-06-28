@@ -16,12 +16,14 @@ html {
     justify-content: center;
     text-align: center;
     margin: 20px;
+    vertical-align: middle;
 }
 
 .quarter {
     width: 25%;
     font-family: "Roboto", sans-serif;
-    padding-top: 19px;
+    padding-top: 20px;
+    vertical-align: middle;
 }
 
 .half {
@@ -40,7 +42,7 @@ html {
     grid-column-start: 2;
     grid-column-end: 4;
     text-align: left;
-    grid-row-start: 11;
+    grid-row-start: 10;
     padding-left: 12px;
 }
 
@@ -48,7 +50,7 @@ html {
     grid-column-start: 3;
     padding-top: 40px;
     text-align: left;
-    grid-row-start: 11;
+    grid-row-start: 10;
     padding-left: 12px;
 }
 .btn {
@@ -65,3 +67,40 @@ html {
 .btn:hover {
     background-color: rgba(94, 99, 104, 0.473);
 }
+
+a:link, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.icon-bar {
+    font-size: 24px;
+    
+}
+
+.home {
+    padding-top: 16px;
+}
+
+.products__section {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: 25% 100px 100px 100px auto;
+    grid-template-columns: 20% 5% 25% auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.products__section-grid-left {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.products__section-grid-right {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
